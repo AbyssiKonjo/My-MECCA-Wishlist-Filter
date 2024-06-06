@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to jQuery UI CSS from a CDN -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- Fullpage CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.css" integrity="sha512-AIwt5sjXSKDo4t0KSQ/eAuy43kQMc1hYtIKLxaFrHd26nQFzMo1FJdBIickVyGXnhm2xB2OOYBqMBgu3dBU4KA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>MECCA - Whish list</title>
+</head>
+<body>
+
+    <div id="fullpage">
+        <nav id="fixedNav">
+            <div class="navigation-buttons">
+                <button id="goToHome"><i class="fa-solid fa-house"></i></button>
+                <button id="navGoToAddProduct"><i class="fa-solid fa-plus"></i></button>
+                <button id="goToAccountDetails"><i class="fa-solid fa-user"></i></button>
+                <button id="goToWishlist"><i class="fa-solid fa-heart"></i></button>
+                <button id="goToCart"><i class="fa-solid fa-cart-shopping"></i></button> 
+            </div>
+        </nav>
+        <!-- SECTIONS - these are the verticals - must have at least 1 -->
+        <!-- SLIDES - horizontal - live inside of SECTIONS -->
+        <div class="section" id="home">
+            <div class="image1"></div> 
+            <div class="image2"></div> 
+              
+            <h1>Welcome to <br> My MECCA <br> Whishlist</h1>
+
+            <button id="goToAddProduct">Add New Product</button>
+
+
+            <!-- Slides goo inside a section -->
+            <!-- <div class="slide">
+                <h2>Welcome to <br> My MECCA <br> Whishlist</h2>
+            </div>
+            <div class="slide" id="accountDetails">
+                <header>
+                    <h2>Account Details</h2>
+                </header>
+                
+            </div> -->
+            <!-- <div class="slide" id="wishlist">
+                <h2>Wishlist</h2>
+            </div>
+            <div class="slide" id="cart">
+                <h2>Cart</h2>
+            </div> -->
+        </div>
+
+        <!-- Add -->
+        <div class="section" id="add">
+            <!-- <header>
+                <h2>Add New Product</h2>
+            </header> -->
+            <!-- User Input Form -->
+            <div id="add-product">
+                <h2>Add New Product</h2>
+                <form id="product-form">
+                    <div class="form-group">
+                        <label for="brandName">Brand Name:</label>
+                        <input type="text" id="brandName" name="brandName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="productName">Product Name:</label>
+                        <input type="text" id="productName" name="productName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="price">Price:</label>
+                        <input type="number" id="price" name="price" step="0.01" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="shade">Shade:</label>
+                        <input type="text" id="shade" name="shade">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="category">Category:</label>
+                        <select id="category" name="category" required>
+                            <option value="#">Select</option>
+                            <option value="body">Body</option>
+                            <option value="hair">Hair</option>
+                            <option value="skincare">Skincare</option>
+                            <option value="makeup">Makeup</option>
+                            <option value="fragrance">Fragrance</option>
+                            <option value="lipstick">Lipstick</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group" id="imageURL">
+                        <label for="image">Image URL:</label>
+                        <input type="text" id="image" name="image">
+                    </div>
+              
+                  <button type="submit">Add Product</button>
+                </form>
+            </div>   
+        </div>
+
+        <!-- Account -->
+        <div class="section" id="accountDetails">
+            <header>
+                <h2>Account Details</h2>
+            </header>
+
+            <div class="wrapper">
+                <div class="profile-image"></div>
+                <div class="details"></div>
+            </div>   
+        </div>
+
+        <!-- Whishlist -->
+        <div class="section" id="wishlist">
+            <header>
+                <h2>My Wishlist</h2>
+
+                <!-- Filter Start -->
+                <div class="filter-container">
+                    <!-- Filter container-->
+                    <div class="filter-container">
+                        <!-- Filter -->
+                        <div class="filter">
+                            <label for="filterName">Filter</label>
+                            <select name="filterName" id="filterName" class="full-width-select">
+                                <!-- Options for the select & a value -->
+                                <option value="">Please Select</option>
+                                <option value="Lipstick">Lipstick</option>
+                                <option value="Foundation">Foundation</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- Filter End -->
+            </header>
+
+            <!-- Populated Cards -->
+            <div class="card-container">
+                <!-- Populated via JS -->
+            </div>
+
+        </div>
+        <!-- Whishlist End -->
+
+        <!-- Cart -->
+        <div class="section" id="cart">
+            <header>
+                <h2>Cart</h2>
+            </header>   
+        </div>
+    </div>
+
+    
+    
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Fullpage JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js" integrity="sha512-yHHLi2ZwgtW9QNVZd0asqMyWGJ6Kx73ijKlGWSi3MwYFB5ZzOJV8wPtopKr6muHk5SERgF3OB/2dZj3StlI34w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7e3c06da8b.js" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "brandName": "Charlotte Tilbury",
+        "productName": "Airbrush Flawless Lip Blur",
+        "price": 66.00,
+        "shade": "Walk Of No Shame Blur",
+        "category": "lipstick",
+        "image": "images/CharlotteTilbury-AirbrushFlawlessLipBlur-WalkOfNoShameBlur.webp"
+    },
+    {
+        "id": 2,
+        "brandName": "Charlotte Tilbury",
+        "productName": "Airbrush Flawless Lip Blur",
+        "price": 66.00,
+        "shade": "Walk Of No Shame Blur",
+        "category": "lipstick",
+        "image": "images/CharlotteTilbury-AirbrushFlawlessLipBlur-WalkOfNoShameBlur.webp"
+    }
+]
