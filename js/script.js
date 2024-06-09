@@ -11,7 +11,10 @@ $(document).ready(function () {
         // navigation: true, // comment out or remove to remove nav arrows    
         controlArrows: false,
         // Specificy all fixed elements:
-        fixedElements:'#fixedNav'
+        fixedElements:'#fixedNav',
+        // Enable scrollOverflow
+        // scrollOverflow: true
+
     });
 
     fullpage_api.setAllowScrolling(false); // prevent scroll of sections and slides
@@ -37,9 +40,12 @@ $(document).ready(function () {
         moveToSection(4);
     });
 
-    $('#goToCart').click(function() {
-        moveToSection(5);
-    });
+    // $('#goToCart').click(function() {
+    //     moveToSection(5);
+    // });
+
+    
+
 
     // Fetch products and initialize filters
     fetchProducts();
@@ -69,6 +75,17 @@ $(document).ready(function () {
                 console.log('Data fetched:', data); // Log the data to see if it is correct
                 window.products = data;
                 filterAndPopulateResults(); // Call the function after fetching data
+                var randomNum = Math.floor(Math.random() * 3);
+                var randomNum2 = Math.floor(Math.random() * 3);
+                var imageUrl1 = window.products[randomNum];
+                var imageUrl2 = window.products[randomNum2];
+                console.log(randomNum);
+                console.log(randomNum2);
+                // $('#image1').attr("src",imageUrl1.image);
+                $('.image1').css('background-image', 'url(' + imageUrl1 + ')');
+
+                $('#image2').attr("src", imageUrl2.image);
+
             })
             .catch(error => console.error('Fetch error:', error)); // Log any fetch errors
     }

@@ -5,34 +5,178 @@
         "productName": "Airbrush Flawless Lip Blur",
         "price": 66.00,
         "shade": "Walk Of No Shame Blur",
-        "category": "lipstick",
+        "category": "Makeup, Lip, Lipstick",
         "image": "images/CharlotteTilbury-AirbrushFlawlessLipBlur-WalkOfNoShameBlur.webp"
     },
     {
         "id": 2,
-        "brandName": "Charlotte Tilbury",
-        "productName": "Airbrush Flawless Lip Blur",
-        "price": 66.00,
-        "shade": "Walk Of No Shame Blur",
-        "category": "lipstick",
-        "image": "images/CharlotteTilbury-AirbrushFlawlessLipBlur-WalkOfNoShameBlur.webp"
+        "brandName": "Tatcha",
+        "productName": "The Water Cream (50ml)",
+        "price": 127.00,
+        "shade": "N/A",
+        "category": "Skincare, Face",
+        "image": "images/Tatcha-TheWaterCream.webp"
     },
     {
         "id": 3,
         "brandName": "Charlotte Tilbury",
         "productName": "Airbrush Flawless Lip Blur",
         "price": 66.00,
-        "shade": "Walk Of No Shame Blur",
-        "category": "lipstick",
-        "image": "images/CharlotteTilbury-AirbrushFlawlessLipBlur-WalkOfNoShameBlur.webp"
+        "shade": "Ruby Blur",
+        "category": "Makeup, Lip, Lipstick",
+        "image": "images/CharlotteTilbury-RubyBlur.webp"
     },
     {
         "id": 4,
-        "brandName": "Charlotte Tilbury",
-        "productName": "Airbrush Flawless Lip Blur",
+        "brandName": "Clinique",
+        "productName": "Cheek Pop",
+        "price": 62.00,
+        "shade": "Honey Pop",
+        "category": "Makeup, Blush",
+        "image": "images/Clinique-CheekPopHoneyPop.webp"
+    },
+    {
+        "id": 5,
+        "brandName": "Tatcha",
+        "productName": "The Dewy Skin Cream - Limited Edition (75ml)",
+        "price": 127.00,
+        "shade": "N/A",
+        "category": "Skincare, Face",
+        "image": "images/Tatcha-DewySkinCreamLimitedEdition.webp"
+    },
+    {
+        "id": 6,
+        "brandName": "Emma Lewisham",
+        "productName": "The Emma Lewisham Essentials",
+        "price": 150.00,
+        "shade": "N/A",
+        "category": "Skincare, Face",
+        "image": "images/EmmaLewisham-TheEssentials.webp"
+    },
+    {
+        "id": 7,
+        "brandName": "Tatcha",
+        "productName": "The Rice Wash (120ml)",
+        "price": 65.00,
+        "shade": "N/A",
+        "category": "Skincare, Face",
+        "image": "images/Tatcha-TheRiceWash.webp"
+    },
+    {
+        "id": 8,
+        "brandName": "NARS",
+        "productName": "Light Reflecting Foundation",
+        "price": 97.00,
+        "shade": "cadiz",
+        "category": "Makeup, Foundation",
+        "image": "images/Nars-LightReflectingFoundation.webp"
+    },
+    {
+        "id": 9,
+        "brandName": "NARS",
+        "productName": "Radiant Creamy Concealer",
+        "price": 60.00,
+        "shade": "caramel",
+        "category": "Makeup, Concealer",
+        "image": "images/Nars-RadiantCreamyConcealer.webp"
+    },
+    {
+        "id": 10,
+        "brandName": "Morphe",
+        "productName": "18S Sparkling Sands Artistry Palette (22g)",
+        "price": 38.00,
+        "shade": "multi",
+        "category": "Makeup, Eyeshadow",
+        "image": "images/Morphe-18SSparklingSandsArtistryPalette.webp"
+    },
+    {
+        "id": 11,
+        "brandName": "Stila",
+        "productName": "One Step Correct",
         "price": 66.00,
-        "shade": "Walk Of No Shame Blur",
-        "category": "lipstick",
-        "image": "images/CharlotteTilbury-AirbrushFlawlessLipBlur-WalkOfNoShameBlur.webp"
+        "shade": "Deep",
+        "category": "Makeup, Face, Primer",
+        "image": "images/Stila-OneStepCorrect.webp"
+    },
+    {
+        "id": 12,
+        "brandName": "Urban Decay",
+        "productName": "Anti-Ageing Eyeshadow Primer Potion (10g)",
+        "price": 47.00,
+        "shade": "N/A",
+        "category": "Makeup, Eye, Eye Primer",
+        "image": "images/UrbanDecay-AntiAgeingEyeshadowPrimerPotion.webp"
+    },
+    {
+        "id": 13,
+        "brandName": "MECCA MAX",
+        "productName": "Off Duty Blush Stick",
+        "price": 22.00,
+        "shade": "Candy",
+        "category": "Makeup, Blush",
+        "image": "images/MeccaMax-OffDutyBlushStick.webp"
+    },
+    {
+        "id": 14,
+        "brandName": "Tatcha",
+        "productName": "The Kissu Lip Mask (9g)",
+        "price": 62.00,
+        "shade": "wisteria",
+        "category": "Skincare, Lip Care, Lip",
+        "image": "images/Tatcha-TheKissuLipMaskWisteria.webp"
+    },
+    {
+        "id": 15,
+        "brandName": "Morphe",
+        "productName": "Morphe X Abby Roberts 35-Pan Artistry Palette (41g)",
+        "price": 56.00,
+        "shade": "multi",
+        "category": "Makeup, Eye, Eyeshadow",
+        "image": "images/Morphe-AbbyRoberts_ArtistryPalette.webp"
+    },
+    {
+        "id": 16,
+        "brandName": "Estée Lauder",
+        "productName": "Take It Away Lotion 200ML",
+        "price": 89.00,
+        "shade": "N/A",
+        "category": "Skincare, Cleanser, Toner, Makeup Remover",
+        "image": "images/EsteeLauder-TakeItAwayLotion.webp"
+    },
+    {
+        "id": 17,
+        "brandName": "Sol de Janeiro",
+        "productName": "Bum Bum Body Scrub (220g)",
+        "price": 79.00,
+        "shade": "N/A",
+        "category": "Body, Cleanser, Exfoliate, Scrub",
+        "image": "images/SoldeJaneiro-BrazilianBumBumScrub.png"
+    },
+    {
+        "id": 18,
+        "brandName": "Dr. Dennis Gross",
+        "productName": "Hyaluronic Marine Hydration Booster 30ml",
+        "price": 140.00,
+        "shade": "N/A",
+        "category": "Skincare, Treatment, Oils, Serums",
+        "image": "images/Dr.DennisGross-HyaluronicMarineHydrationBooster.webp"
+    },
+    {
+        "id": 19,
+        "brandName": "Urban Decay",
+        "productName": "All Nighter Long Lasting Makeup Setting Spray",
+        "price": 70.00,
+        "shade": "N/A",
+        "category": "Makeup, Setting Spray",
+        "image": "images/UrbanDecay-AllNighterLongLastingMakeupSettingSpray.webp"
+    },
+    {
+        "id": 20,
+        "brandName": "Sodashi",
+        "productName": "Jasmine and Rose Body Lotion 200 ml",
+        "price": 83.00,
+        "shade": "N/A",
+        "category": "Body, Moisturiser, Oils",
+        "image": "images/Sodashi-JasmineRoseBodyLotion.webp"
     }
 ]
