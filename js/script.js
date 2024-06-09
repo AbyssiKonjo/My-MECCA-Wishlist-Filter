@@ -90,6 +90,11 @@ $(document).ready(function () {
         // Add the new product to the products array
         window.products.push(newProduct);
 
+        // write product to product.json
+        var products = require('../data/products.json');
+        products.push(newProduct);
+        console.log('Data added to '+products);
+
         // Update the UI with the new product list
         filterAndPopulateResults();
     }

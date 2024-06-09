@@ -14,6 +14,7 @@
 <body>
 
     <div id="fullpage">
+        <!-- Nav Start -->
         <nav id="fixedNav">
             <div class="navigation-buttons">
                 <button id="goToHome"><i class="fa-solid fa-house"></i></button>
@@ -23,43 +24,27 @@
                 <button id="goToCart"><i class="fa-solid fa-cart-shopping"></i></button> 
             </div>
         </nav>
-        <!-- SECTIONS - these are the verticals - must have at least 1 -->
-        <!-- SLIDES - horizontal - live inside of SECTIONS -->
+        <!-- Nav End -->
+        
+        <!-- Home Start -->
         <div class="section" id="home">
             <div class="image1"></div> 
             <div class="image2"></div> 
               
-            <h1>Welcome to <br> My MECCA <br> Whishlist</h1>
+            <h1>Welcome to <br> My MECCA <br> Wishlist</h1>
 
             <button id="goToAddProduct">Add New Product</button>
-
-
-            <!-- Slides goo inside a section -->
-            <!-- <div class="slide">
-                <h2>Welcome to <br> My MECCA <br> Whishlist</h2>
-            </div>
-            <div class="slide" id="accountDetails">
-                <header>
-                    <h2>Account Details</h2>
-                </header>
-                
-            </div> -->
-            <!-- <div class="slide" id="wishlist">
-                <h2>Wishlist</h2>
-            </div>
-            <div class="slide" id="cart">
-                <h2>Cart</h2>
-            </div> -->
         </div>
+        <!-- Home End -->
 
-        <!-- Add -->
+        <!-- Add Products Start -->
         <div class="section" id="add">
-            <!-- <header>
+            <header>
                 <h2>Add New Product</h2>
-            </header> -->
+            </header>
             <!-- User Input Form -->
             <div id="add-product">
-                <h2>Add New Product</h2>
+                <h3>Product Information</h3>
                 <form id="product-form">
                     <div class="form-group">
                         <label for="brandName">Brand Name:</label>
@@ -103,6 +88,8 @@
                 </form>
             </div>   
         </div>
+        <!-- Add Products End -->
+
 
         <!-- Account -->
         <div class="section" id="accountDetails">
@@ -112,11 +99,32 @@
 
             <div class="wrapper">
                 <div class="profile-image"></div>
-                <div class="details"></div>
+                <div class="details">
+                    <h2>Membership Details</h2>
+
+                    <div class="group-details">
+                        <h3>Name:</h3>
+                        <span>Abyssinia</span>
+                    </div>
+
+                    <h2>Beauty Loop Status</h2>
+
+                    <div class="group-details">
+                        <h3>Current Level:</h3>
+                        <span>Level 2</span>
+                    </div>
+
+                    <div class="group-details">
+                        <h3>Amount To Next Level:</h3>
+                        <span>$54 to reach next level</span>
+                    </div>
+                </div>
             </div>   
         </div>
+        <!-- Account End -->
 
-        <!-- Whishlist -->
+
+        <!-- Wishlist Start -->
         <div class="section" id="wishlist">
             <header>
                 <h2>My Wishlist</h2>
@@ -146,7 +154,7 @@
             </div>
 
         </div>
-        <!-- Whishlist End -->
+        <!-- Wishlist End -->
 
         <!-- Cart -->
         <div class="section" id="cart">

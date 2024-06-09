@@ -19,64 +19,52 @@ nav {
   width: 100vw;
   height: 100px;
   padding-right: 2%;
-  background-color: pink;
+  background-color: black;
   z-index: 100;
 }
 nav .navigation-buttons button {
+  font-size: 2em;
   margin-left: 10px;
-  padding: 10px;
+  padding: 15px;
+  background-color: white;
   border: none;
   border-radius: 4px;
+  box-shadow: 6px 4px 4px -5px rgba(0, 0, 0, 0.5);
 }
 nav .navigation-buttons button:hover {
-  background-color: #777;
+  background-color: ghostwhite;
+  box-shadow: inset 8px 8px 8px -4px rgba(0, 0, 0, 0.5);
 }
 
 .section {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
 }
 .section header {
-  margin-top: 100px;
-  background: blue;
-  width: 100vw;
+  display: flex;
+  align-content: flex-start;
+  justify-content: baseline;
+  width: 90vw;
+  padding: 90px 0 5px 0;
+  border-bottom: 1px solid black;
 }
 .section header h2 {
-  text-align: center;
-  color: black;
   font-size: 4em;
-}
-.section .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4%;
-  margin: 2%;
-}
-.section .wrapper .profile-image {
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background-color: white;
-}
-.section .wrapper .details {
-  width: 600px;
-  height: 460px;
-  border-radius: 10px;
-  border: 4px solid white;
 }
 
 /* Home Section */
 .section:nth-child(1) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(../images/background-image.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
 }
 .section:nth-child(1) h1 {
-  margin-left: 200px;
+  margin-right: 700px;
   color: white;
   font-size: 6em;
 }
@@ -95,76 +83,73 @@ nav .navigation-buttons button:hover {
 .section:nth-child(1) .image2 {
   top: 40%;
   margin-right: 5%;
-  background-color: red;
+  background-color: black;
 }
 .section:nth-child(1) button {
-  margin-top: 5%;
-  margin-left: 28%;
+  margin-top: 2%;
   font-size: 2em;
   font-weight: 700;
   padding: 10px;
   border: none;
   border-radius: 4px;
-  background-color: blue;
-}
-
-/* New Product Section */
-.section:nth-child(2) {
-  background-color: #3498db;
-}
-
-/* Account Section */
-.section:nth-child(3) {
-  background-color: #1abc9c;
-}
-
-/* Whishlist Section */
-.section:nth-child(4) {
-  background-color: #9b59b6;
-}
-
-/* Cart Section */
-.section:nth-child(5) {
   background-color: white;
 }
+.section:nth-child(1) button:hover {
+  background-color: ghostwhite;
+  box-shadow: inset 8px 8px 8px -4px rgba(0, 0, 0, 0.5);
+}
 
-/* Add Product Form */
-#add-product {
-  margin-top: 10%;
+/* Add New Product Section */
+.section:nth-child(2) {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(../images/background-image.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #3498db;
+  /* Add Product Form */
+}
+.section:nth-child(2) header {
+  display: flex;
+  margin-top: -6%;
+}
+.section:nth-child(2) #add-product {
+  display: flex;
+  flex-direction: column;
   width: 80vw;
+  margin: auto;
+  margin-top: 2%;
   padding: 2%;
+  color: white;
   background-color: black;
   border: 4px solid white;
 }
-#add-product h2 {
+.section:nth-child(2) #add-product h3 {
   text-align: center;
-  font-size: 4em;
+  font-size: 3.6em;
   margin-bottom: 20px;
 }
-#add-product #product-form {
+.section:nth-child(2) #add-product #product-form {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two equal columns */
   gap: 20px;
 }
-#add-product #product-form .form-group {
+.section:nth-child(2) #add-product #product-form .form-group {
   display: flex;
   flex-direction: column;
   margin-right: 10px; /* Adjust the margin as needed */
 }
-#add-product #product-form .form-group label {
+.section:nth-child(2) #add-product #product-form .form-group label {
   width: calc(100% - 10px);
-  font-size: 1em;
+  font-size: 1.5em;
   padding-bottom: 5px;
 }
-#add-product #product-form .form-group input, #add-product #product-form .form-group select, #add-product #product-form .form-group textarea {
+.section:nth-child(2) #add-product #product-form .form-group input, .section:nth-child(2) #add-product #product-form .form-group select, .section:nth-child(2) #add-product #product-form .form-group textarea {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
 }
-#add-product #product-form .form-group textarea {
-  width: calc(100% - 10px);
-}
-#add-product #product-form button {
+.section:nth-child(2) #add-product #product-form button {
   font-size: 2em;
   padding: 10px 15px;
   background-color: white;
@@ -172,50 +157,120 @@ nav .navigation-buttons button:hover {
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  flex: 1 0 100%;
 }
-#add-product #product-form button:hover {
+.section:nth-child(2) #add-product #product-form button:hover {
   background-color: #777;
 }
 
-/* Filters */
-.filter-container {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  height: 100px;
-  gap: 40px;
+/* Account Section */
+.section:nth-child(3) {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(../images/background-image.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: plum;
 }
-.filter-container .filter-container {
+.section:nth-child(3) header {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: right;
+  margin-top: -1.5%;
+}
+.section:nth-child(3) .wrapper {
+  display: flex;
   align-items: center;
-  width: 100%;
-  gap: 42px;
-  padding: 0px 2%;
-  background-color: rgb(158, 19, 130);
+  justify-content: space-between;
+  gap: 4%;
+  margin: 2%;
 }
-.filter-container .filter-container #add-btn {
-  padding: 7px;
+.section:nth-child(3) .wrapper .profile-image {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: ghostwhite;
 }
-.filter-container .filter-container .filter {
+.section:nth-child(3) .wrapper .details {
+  width: 600px;
+  height: 460px;
+  padding: 2% 2% 2% 2%;
+  background-color: ghostwhite;
+  box-shadow: 6px 6px 4px 4px rgba(0, 0, 0, 0.373);
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.section:nth-child(3) .wrapper .details h2:nth-child(1) {
+  text-decoration: underline;
+  margin: 0 0 2% 0;
+}
+.section:nth-child(3) .wrapper .details h2 {
+  font-size: 2.5em;
+}
+.section:nth-child(3) .wrapper .details .group-details {
   display: flex;
   flex-direction: column;
 }
-.filter-container .filter-container .filter label {
-  margin-bottom: 4px;
-  color: white;
+.section:nth-child(3) .wrapper .details .group-details h3 {
+  font-size: 2em;
+  margin: 2% 0 2% 0;
+}
+.section:nth-child(3) .wrapper .details .group-details span {
+  font-size: 2em;
 }
 
-/* Results */
-.card-container {
+/* Wishlist Section */
+.section:nth-child(4) {
+  background-color: white;
+  /* Results */
+}
+.section:nth-child(4) header {
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-between;
+  margin-top: 1%;
+  /* Filters */
+}
+.section:nth-child(4) header h2 {
+  text-align: center;
+  color: black;
+  font-size: 4em;
+}
+.section:nth-child(4) header .filter-container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.section:nth-child(4) header .filter-container .filter-container {
+  position: static;
+  margin-left: 860px;
+  top: 219px;
+  width: 100%;
+  gap: 42px;
+}
+.section:nth-child(4) header .filter-container .filter-container #add-btn {
+  padding: 7px;
+}
+.section:nth-child(4) header .filter-container .filter-container .filter {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+}
+.section:nth-child(4) header .filter-container .filter-container .filter label {
+  font-size: 1.5em;
+  margin-bottom: 4px;
+  color: black;
+}
+.section:nth-child(4) header .filter-container .filter-container .filter select {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.section:nth-child(4) .card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  padding: 30px 60px 120px 60px;
+  gap: 40px;
+  padding: 30px 0 60px 0;
 }
-.card-container .card {
+.section:nth-child(4) .card-container .card {
   width: 300px;
   height: 500px;
   border-radius: 8px;
@@ -224,19 +279,42 @@ nav .navigation-buttons button:hover {
   -webkit-box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.25);
 }
-.card-container .card img {
+.section:nth-child(4) .card-container .card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   height: 250px;
 }
-.card-container .card .product-details {
+.section:nth-child(4) .card-container .card .product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
   padding: 16px;
   color: black;
 }
-.card-container .card .product-details h3 {
+.section:nth-child(4) .card-container .card .product-details h3 {
   font-size: 20px;
 }
-.card-container .card .product-details h4 {
+.section:nth-child(4) .card-container .card .product-details h4 {
   font-size: 16px;
+}
+.section:nth-child(4) .card-container .card .product-details p {
+  font-size: 12px;
+}
+
+/* Cart Section */
+.section:nth-child(5) {
+  background-color: white;
+}
+.section:nth-child(5) header {
+  display: flex;
+  align-content: flex-start;
+  justify-content: baseline;
+  margin-top: 6%;
+}
+.section:nth-child(5) header h2 {
+  font-size: 4em;
 }/*# sourceMappingURL=style.css.map */
