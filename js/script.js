@@ -13,7 +13,7 @@ $(document).ready(function () {
         // Specificy all fixed elements:
         fixedElements:'#fixedNav',
         // Enable scrollOverflow
-        // scrollOverflow: true
+        scrollOverflow: true
 
     });
 
@@ -39,13 +39,6 @@ $(document).ready(function () {
     $('#goToWishlist').click(function() {
         moveToSection(4);
     });
-
-    // $('#goToCart').click(function() {
-    //     moveToSection(5);
-    // });
-
-    
-
 
     // Fetch products and initialize filters
     fetchProducts();
@@ -118,6 +111,7 @@ $(document).ready(function () {
 
     // Filter input elements
     const filter = document.getElementById("filterName");
+
     if (filter) {
         // Event listeners for filters
         filter.addEventListener("input", filterAndPopulateResults);
@@ -127,7 +121,7 @@ $(document).ready(function () {
 
     // Filter cards based on filter input
     function filterCards() {
-        const filter = document.getElementById("filterName");
+        const filterValue = document.getElementById("filterName").value;
         if (!window.products) {
             console.error('Products not loaded');
             return [];
@@ -135,13 +129,10 @@ $(document).ready(function () {
 
         return window.products.filter(product => {
             // Check if category matches
-            if (filter.value && !product.category.toLowerCase().includes(filter.value.toLowerCase())) {
-                return false;
-            }
-            return true;
+            return !filterValue || product.category.toLowerCase().includes(filterValue.toLowerCase());
         });
     }
-    
+
     // Filter and then Populate Results
     function filterAndPopulateResults() {
         const filteredProducts = filterCards();
@@ -160,7 +151,7 @@ $(document).ready(function () {
             filteredResults.forEach(product => {
                 const productsCardHTML = `
                     <div class="card">
-                        <img src="${product.image}" alt="${product.name}">
+                        <img src="${product.image}" alt="${product.productName}">
                         <div class="product-details">
                             <h4>${product.brandName}</h4>
                             <h3>${product.productName}</h3>
